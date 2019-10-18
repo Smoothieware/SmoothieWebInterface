@@ -1,2 +1,21 @@
-# SmoothieWebInterface
-A standard/reference web interface for Smoothieboards, currently written for v1 but ultimately intended for v2
+# Smoothie
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
