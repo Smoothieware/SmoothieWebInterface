@@ -1,6 +1,6 @@
 // vue.config.js
 module.exports = {
-  //publicPath: process.env.NODE_ENV === 'production' ? '/SmoothieWebInterface/dist/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/SmoothieWebInterface/dist/' : '/',
   pages: {
     index: {
       // entry for the page
