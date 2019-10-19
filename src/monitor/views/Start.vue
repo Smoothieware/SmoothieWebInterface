@@ -20,6 +20,7 @@ export default {
     LogList
   },
   data: () => {
+    class Log {}
     return {
       log: new Log(),
    };
