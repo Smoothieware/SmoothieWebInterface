@@ -1,4 +1,4 @@
-# Smoothie
+# Smoothie web Interface
 
 ## Project setup
 ```
@@ -18,4 +18,9 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Run the UI and serve the pages
+```
+vue ui
 ```

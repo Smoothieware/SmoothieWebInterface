@@ -58,7 +58,22 @@ module.exports = {
       // chunks to include on this page, by default includes
       // extracted common chunks and vendor chunks.
       chunks: ['chunk-vendors', 'chunk-common', 'monitor']
-    }
+    },
+    system: {
+      // entry for the page
+      entry: 'src/system/main.js',
+      // the source template
+      template: 'public/index.html',
+      // output as dist/index.html
+      filename: 'system.html',
+      // when using title option
+      // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
+      title: 'System Page',
+      // chunks to include on this page, by default includes
+      // extracted common chunks and vendor chunks.
+      chunks: ['chunk-vendors', 'chunk-common', 'system']
+    },
+
 
 
     // when using the entry-only string format,
