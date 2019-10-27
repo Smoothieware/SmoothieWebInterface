@@ -1,7 +1,8 @@
 // vue.config.js
 module.exports = {
   //baseUrl: '/SmoothieWebInterface/dist/',
-  baseUrl: process.env.NODE_ENV === 'production' ? '/SmoothieWebInterface/dist/' : '/',
+  //baseUrl: process.env.NODE_ENV === 'production' ? '/SmoothieWebInterface/dist/' : '/',
+  //"baseUrl" option in vue.config.js is deprecated now, please use "publicPath" instead.
   pages: {
     index: {
       // entry for the page
@@ -73,8 +74,20 @@ module.exports = {
       // extracted common chunks and vendor chunks.
       chunks: ['chunk-vendors', 'chunk-common', 'system']
     },
-
-
+    config_machine: {
+      // entry for the page
+      entry: 'src/config/machine/main.js',
+      // the source template
+      template: 'public/index.html',
+      // output as dist/index.html
+      filename: 'config_machine.html',
+      // when using title option
+      // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
+      title: 'Machine Configuration Page',
+      // chunks to include on this page, by default includes
+      // extracted common chunks and vendor chunks.
+      chunks: ['chunk-vendors', 'chunk-common', 'config_machine']
+    },
 
     // when using the entry-only string format,
     // template is inferred to be `public/subpage.html`

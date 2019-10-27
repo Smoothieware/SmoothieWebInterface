@@ -263,7 +263,7 @@ export default {
     },
   },
   methods: {
-    jog: function(event){
+    jog: function(event){
       // Call the jog routine with the right parameters
       var c = $(event.target.parentNode);
       this.controller.jog({direction:c.attr("jog-direction"), distance:c.attr("jog-distance"), axis:c.attr("jog-axis")});

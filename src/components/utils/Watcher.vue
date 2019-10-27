@@ -10,7 +10,7 @@ export default {
   components: {
   },
   mounted(){
-    var that = this;
+    //var that = this;
     // When we are connected
     machine.communication.on_connected.push( () => {
       // Start watching

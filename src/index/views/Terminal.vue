@@ -31,9 +31,13 @@ export default {
     }
   },
   methods: {
-    command_entered(event){
+    command_entered(){
       var command = $("#command_input").val();
-      machine.communication.command([command]).then((data) => {console.log(data); });
+      machine.communication.command([command]).then(
+        //(data) => {
+          //console.log(data);
+        //}
+      );
     }
   }
 }

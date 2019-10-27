@@ -6,8 +6,8 @@
       </div>
       <div class='card-body'>
         <div class='row'>
-          <div class="col-md-3" v-for="menu in children" v-bind:key="menu.name" v-if="menu.display == undefined || menu.display(config)" v-on:click="clicked(category_name, menu)">
-            <div class="fa-10x big-menu-icon">
+          <div class="col-md-3" v-for="menu in children" v-bind:key="menu.name" v-on:click="clicked(category_name, menu)">
+            <div class="fa-10x big-menu-icon" v-if="menu.display == undefined || menu.display(config)">
               <span class="fa-layers fa-fw" style="background:white">
                 <i class="fas fa-circle" v-bind:style="{color: menu.color}"></i>
                 <i v-bind:class="['fa-inverse', 'fas', 'fa-' + menu.icon]" data-fa-transform="shrink-8"></i>
